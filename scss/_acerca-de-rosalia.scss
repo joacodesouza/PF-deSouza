@@ -1,0 +1,16 @@
+.escuchala-aqui{
+    @include flex-justify-center;
+    padding: 2rem;
+    align-items: center;
+}
+
+.spotify{
+    @include flex-justify-center;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1200px){
+    .spotify{
+        flex-wrap: wrap;
+    }
+}

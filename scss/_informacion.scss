@@ -1,0 +1,15 @@
+#video{
+    flex-grow: 1;
+}
+
+.informacion-video{
+    @include flex-column-center;
+    margin-top: 2rem;
+    gap: 30px;
+}
+
+@media screen and (min-width: 992px){
+    .informacion-video{
+        flex-direction: row-reverse;
+    }
+}

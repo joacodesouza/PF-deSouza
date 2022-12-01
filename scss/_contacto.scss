@@ -1,0 +1,13 @@
+.contacto{
+    @include flex-justify-center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 240px){
+    .contacto{
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
