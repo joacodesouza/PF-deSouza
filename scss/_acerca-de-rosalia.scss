@@ -43,8 +43,7 @@
 
 @media screen and (max-width: 800px){
     .LA-spotify, .EMQ-spotify, .motomami-spotify, .motomami-plus-spotify{
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
 
         iframe{
             margin: 0rem;

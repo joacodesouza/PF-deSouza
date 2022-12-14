@@ -4,9 +4,8 @@
     flex-direction: column;
 
     p{
-        display: flex;
+        @include flex-justify-center;
         text-align: justify;
-        justify-content: center;
         padding: 3.5rem;
     }
 }
@@ -29,9 +28,8 @@
 }
 
 #CA-LNDA{
-    display: flex;
+    @include flex-justify-center;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
 
     img{
@@ -42,8 +40,7 @@
     }
 
     p{
-        display: flex;
-        justify-content: center;
+        @include flex-justify-center;
         text-align: justify;
     }
 }
