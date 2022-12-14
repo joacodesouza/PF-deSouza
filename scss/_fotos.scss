@@ -1,8 +1,31 @@
-.fotos{
-    flex-grow: 1;
+.fila-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-#carouselExampleControls{
-    margin: 0 auto;
-    max-width: 50%;
+.columna-galeria {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+    img{
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .columna-galeria {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .columna-galeria {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
